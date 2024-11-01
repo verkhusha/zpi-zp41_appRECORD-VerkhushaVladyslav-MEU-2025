@@ -1,0 +1,257 @@
+/* Головна */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: url(438441_1.jpg);
+
+
+/* Ресторан “Смак” */
+
+position: absolute;
+width: 1049px;
+height: 116px;
+left: calc(50% - 1049px/2 - 0.5px);
+top: 46px;
+
+font-family: 'Kaisei Opti';
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+line-height: 116px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+color: color(display-p3 1.000 1.000 1.000);
+
+text-shadow: 10px 10px 0px rgba(0, 0, 0, 0.25);
+text-shadow: 10px 10px 0px color(display-p3 0.000 0.000 0.000 / 0.25);
+
+
+/* “Гарно готує, гарно смакує” */
+
+position: absolute;
+width: 659px;
+height: 43px;
+left: calc(50% - 659px/2 + 0.5px);
+top: 170px;
+
+font-family: 'Kaisei Opti';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 43px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+color: color(display-p3 1.000 1.000 1.000);
+
+
+
+/* Відкритий в 2010 році, ресторан тричі удостоївся премії «Кращий м'ясний ресторан України». М'ясо в BEEF готують на відкритому грилі Parrilla і в дров'яній печі. В меню стейків представлена яловичина з Америки, Іспанії та України. */
+
+position: absolute;
+width: 1263px;
+height: 87px;
+left: calc(50% - 1263px/2 - 0.5px);
+top: 280px;
+
+font-family: 'Kaisei Opti';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 29px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+color: color(display-p3 1.000 1.000 1.000);
+
+
+
+/* Контакти */
+
+position: absolute;
+width: 200px;
+height: 200px;
+left: 620px;
+top: 779px;
+
+
+
+/* Ellipse 5 */
+
+position: absolute;
+width: 200px;
+height: 200px;
+left: calc(50% - 200px/2);
+top: calc(50% - 200px/2 + 367px);
+
+background: rgba(217, 217, 217, 0.5);
+background: color(display-p3 0.851 0.851 0.851 / 0.5);
+filter: blur(7.5px);
+
+
+/* Контакти */
+
+position: absolute;
+width: 131px;
+height: 27px;
+left: calc(50% - 131px/2 + 0.5px);
+top: calc(50% - 27px/2 + 367.5px);
+
+font-family: 'Kelly Slab';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+color: color(display-p3 0.000 0.000 0.000);
+
+
+
+/* Фото ресторану */
+
+position: absolute;
+width: 200px;
+height: 200px;
+left: 1044px;
+top: 512px;
+
+
+
+/* Ellipse 3 */
+
+position: absolute;
+width: 200px;
+height: 200px;
+left: calc(50% - 200px/2 + 424px);
+top: calc(50% - 200px/2 + 100px);
+
+background: rgba(217, 217, 217, 0.5);
+background: color(display-p3 0.851 0.851 0.851 / 0.5);
+filter: blur(7.5px);
+
+
+/* Фото ресторану */
+
+position: absolute;
+width: 131px;
+height: 54px;
+left: calc(50% - 131px/2 + 424.5px);
+top: calc(50% - 54px/2 + 99px);
+
+font-family: 'Kelly Slab';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+color: color(display-p3 0.000 0.000 0.000);
+
+
+
+/* Меню */
+
+position: absolute;
+width: 200px;
+height: 200px;
+left: 621px;
+top: 512px;
+
+
+
+/* Ellipse 2 */
+
+position: absolute;
+width: 200px;
+height: 200px;
+left: calc(50% - 200px/2 + 1px);
+top: calc(50% - 200px/2 + 100px);
+
+background: rgba(217, 217, 217, 0.5);
+background: color(display-p3 0.851 0.851 0.851 / 0.5);
+filter: blur(7.5px);
+
+
+/* Меню */
+
+position: absolute;
+width: 131px;
+height: 27px;
+left: calc(50% - 131px/2 - 0.5px);
+top: calc(50% - 27px/2 + 100.5px);
+
+font-family: 'Kelly Slab';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+color: color(display-p3 0.000 0.000 0.000);
+
+
+
+/* Бронювання столу */
+
+position: absolute;
+width: 200px;
+height: 200px;
+left: 198px;
+top: 512px;
+
+
+
+/* Ellipse 4 */
+
+position: absolute;
+width: 200px;
+height: 200px;
+left: calc(50% - 200px/2 - 422px);
+top: calc(50% - 200px/2 + 100px);
+
+background: rgba(217, 217, 217, 0.5);
+background: color(display-p3 0.851 0.851 0.851 / 0.5);
+filter: blur(7.5px);
+
+
+/* Бронювання столу */
+
+position: absolute;
+width: 131px;
+height: 54px;
+left: calc(50% - 131px/2 - 422.5px);
+top: calc(50% - 54px/2 + 99px);
+
+font-family: 'Kelly Slab';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+color: color(display-p3 0.000 0.000 0.000);
+
