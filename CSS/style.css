@@ -44,9 +44,7 @@ body {
     cursor: pointer;
 }
 
-.tab-button:hover {
-    background-color: #bbb;
-}
+
 
 .tab-button.active {
     background-color: #333;
@@ -58,8 +56,46 @@ body {
     display: none; /* Приховати всі вкладки за замовчуванням */
     padding: 20px;
     border: 1px solid #ccc;
+    display: flex;
 }
 
 .tab-content.active {
-    display: block; /* Показати активну вкладку */
+    display: flex; /* Показати активну вкладку */
+}
+
+/* Стилі для вертикального меню */
+.vertical-menu {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.menu-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #ddd;
+}
+
+.menu-item.active {
+    background-color: #333;
+    color: white;
+}
+
+/* Стилі для вмісту вертикального меню */
+.menu-content {
+    flex-grow: 1;
+}
+
+.menu-text {
+    display: none;
+}
+
+.menu-text.active {
+    display: block;
 }

@@ -12,3 +12,16 @@ function openTab(event, tabId) {
     // Додати активний клас до вибраної кнопки
     event.currentTarget.classList.add('active');
 }
+
+// Функція для перемикання елементів вертикального меню
+function openMenuContent(menuId) {
+    const menuTexts = document.querySelectorAll('.menu-text');
+    menuTexts.forEach(text => text.classList.remove('active'));
+
+    const menuItems = document.querySelectorAll('.menu-item');
+    menuItems.forEach(item => item.classList.remove('active'));
+
+    document.getElementById(menuId).classList.add('active');
+    document.querySelector(`[onclick="openMenuContent('${menuId}')"]`).classList.add('active');
+}
+
