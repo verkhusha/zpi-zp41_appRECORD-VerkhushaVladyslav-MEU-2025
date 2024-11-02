@@ -1,14 +1,31 @@
 .centered-text {
     display: flex;
-    justify-content: center;
-    align-items: flex-start; /* текст вгорі */
-    height: 100vh; /* висота сторінки */
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column; /* Розташовує елементи вертикально */
+    height: 5vh; /* Висота сторінки */
     margin: 0;
-    font-size: 24px; /* розмір шрифту */
+    font-size: 24px; /* Можна налаштувати розмір шрифту */
 }
 
 .subtext {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     margin-top: 10px; /* Відступ між текстами */
     font-size: 18px; /* Розмір шрифту підзаголовка */
     color: #555; /* Колір тексту */
+}
+
+.top-right-image {
+    position: absolute;
+    top: 0;         /* Вирівнювання по верхньому краю */
+    right: 0;       /* Вирівнювання по правому краю */
+    margin: 30px;   /* Відступ від країв сторінки */
+    width: 150px;   /* Ширина зображення, можна налаштувати */
+    height: auto;   /* Зберігає пропорції зображення */
+}
+body {
+    position: relative;
 }
