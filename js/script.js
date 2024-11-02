@@ -1,14 +1,21 @@
+// Функція для перемикання вкладок
 function openTab(event, tabId) {
     // Сховати всі вкладки
     const tabContent = document.querySelectorAll('.tab-content');
-    tabContent.forEach(content => content.classList.remove('active'));
+    tabContent.forEach(content => {
+        content.style.display = 'none';
+        content.classList.remove('active');
+    });
 
     // Прибрати активний клас з усіх кнопок
     const tabButtons = document.querySelectorAll('.tab-button');
     tabButtons.forEach(button => button.classList.remove('active'));
 
     // Показати вибрану вкладку
-    document.getElementById(tabId).classList.add('active');
+    const selectedTab = document.getElementById(tabId);
+    selectedTab.style.display = 'block';
+    selectedTab.classList.add('active');
+    
     // Додати активний клас до вибраної кнопки
     event.currentTarget.classList.add('active');
 }
@@ -24,4 +31,3 @@ function openMenuContent(menuId) {
     document.getElementById(menuId).classList.add('active');
     document.querySelector(`[onclick="openMenuContent('${menuId}')"]`).classList.add('active');
 }
-
