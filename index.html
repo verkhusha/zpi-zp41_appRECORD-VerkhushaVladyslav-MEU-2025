@@ -14,8 +14,8 @@
 
     <div class="tab-menu">
         <!-- Меню вкладок -->
-        <button class="tab-button active" onclick="openTab(event, 'tab1')">Лабораторна робота №1</button>
-        <button class="tab-button" onclick="openTab(event, 'tab2')">Лабораторна робота №2</button>
+        <button class="tab-button active" onclick="openTab(event, 'tab1')">Лабораторна робота №1.1</button>
+        <button class="tab-button" onclick="openTab(event, 'tab2')">Лабораторна робота №1.2</button>
         <button class="tab-button" onclick="openTab(event, 'tab3')">Лабораторна робота №3</button>
         <button class="tab-button" onclick="openTab(event, 'tab4')">Лабораторна робота №4</button>
         <button class="tab-button" onclick="openTab(event, 'tab5')">Лабораторна робота №5</button>
@@ -26,48 +26,57 @@
 
     <!-- Вміст вкладок -->
     <div id="tab1" class="tab-content">
-        <div class="vertical-menu">
-            <button class="menu-item active" onclick="openMenuContent('menu1')">Опис предметного середовища</button>
-            <button class="menu-item" onclick="openMenuContent('menu2')">Тама, мета, місце розташування</button>
-            <button class="menu-item" onclick="openMenuContent('menu3')">СТРУКТУРА ДОКУМЕНТУ</button>
-            <button class="menu-item" onclick="openMenuContent('menu4')">HTML код ТАБЛИЦЬ</button>
-            <button class="menu-item" onclick="openMenuContent('menu5')">HTML код ФОРМИ</button>
-            <button class="menu-item" onclick="openMenuContent('menu6')">HTML код ЗОБРАЖЕННЯ</button>
-            <button class="menu-item" onclick="openMenuContent('menu7')">Висновки</button>
-        </div>
-        <div class="menu-content" id="menu-content">
-            <!-- Поле для вмісту елементів меню -->
-            <p id="menu1" class="menu-text active">Вміст для елемента 1</p>
-            <p id="menu2" class="menu-text">Вміст для елемента 2</p>
-            <p id="menu3" class="menu-text">Вміст для елемента 3</p>
-            <p id="menu4" class="menu-text">Вміст для елемента 4</p>
-            <p id="menu5" class="menu-text">Вміст для елемента 5</p>
-            <p id="menu6" class="menu-text">Вміст для елемента 6</p>
-            <p id="menu7" class="menu-text">Вміст для елемента 7</p>
+        <div class="menu-container">
+            <div class="vertical-menu">
+                <button class="menu-item active" onclick="openMenuContent('menu1')">Опис предметного середовища</button>
+                <button class="menu-item" onclick="openMenuContent('menu2')">Тама, мета, місце розташування</button>
+                <button class="menu-item" onclick="openMenuContent('menu3')">СТРУКТУРА ДОКУМЕНТУ</button>
+                <button class="menu-item" onclick="openMenuContent('menu4')">HTML код ТАБЛИЦЬ</button>
+                <button class="menu-item" onclick="openMenuContent('menu5')">HTML код ФОРМИ</button>
+                <button class="menu-item" onclick="openMenuContent('menu6')">HTML код ЗОБРАЖЕННЯ</button>
+                <button class="menu-item" onclick="openMenuContent('menu7')">Висновки</button>
+            </div>
+            <div class="menu-content" id="menu-content">
+                <!-- Поле для вмісту елементів меню -->
+                <p id="menu1" class="menu-text active">Вміст для елемента 1</p>
+                <p id="menu2" class="menu-text">Вміст для елемента 2</p>
+                <p id="menu3" class="menu-text">Вміст для елемента 3</p>
+                <p id="menu4" class="menu-text">Вміст для елемента 4</p>
+                <p id="menu5" class="menu-text">Вміст для елемента 5</p>
+                <p id="menu6" class="menu-text">Вміст для елемента 6</p>
+                <p id="menu7" class="menu-text">Вміст для елемента 7</p>
+            </div>
         </div>
     </div>
-
     <div id="tab2" class="tab-content">
-        <div class="vertical-menu">
-            <button class="menu-item" onclick="openMenuContent('menu1')">Оаіпвлаівифола</button>
-            <button class="menu-item" onclick="openMenuContent('menu2')">аівфиліалвиосіли</button>
-            <button class="menu-item" onclick="openMenuContent('menu3')">арвифлаівиф</button>
-            <button class="menu-item" onclick="openMenuContent('menu4')">сілигфурал</button>
-            <button class="menu-item" onclick="openMenuContent('menu5')">сіфлггувлф</button>
-            <button class="menu-item" onclick="openMenuContent('menu6')">ісфлгуагуф</button>
-            <button class="menu-item" onclick="openMenuContent('menu7')">стфшщаруфаф</button>
-        </div>
-        <div class="menu-content" id="menu-content">
-            <!-- Поле для вмісту елементів меню -->
-            <p id="menu1" class="menu-text">Вміст для елемента 1 вкладки2</p>
-            <p id="menu2" class="menu-text">Вміст для елемента 2 вкладки2</p>
-            <p id="menu3" class="menu-text">Вміст для елемента 3 вкладки2</p>
-            <p id="menu4" class="menu-text">Вміст для елемента 4 вкладки2</p>
-            <p id="menu5" class="menu-text">Вміст для елемента 5 вкладки2</p>
-            <p id="menu6" class="menu-text">Вміст для елемента 6 вкладки2</p>
-            <p id="menu7" class="menu-text">Вміст для елемента 7 вкладки2</p>
+        <div class="menu-container">
+            <div class="vertical-menu">
+                <button class="menu-item active" onclick="openMenuContent('menu2-1')">Опис предметного середовища</button>
+                <button class="menu-item" onclick="openMenuContent('menu2-2')">Тама, мета, місце розташування</button>
+                <button class="menu-item" onclick="openMenuContent('menu2-3')">СТРУКТУРА ДОКУМЕНТУ</button>
+                <button class="menu-item" onclick="openMenuContent('menu2-4')">HTML код ТАБЛИЦЬ</button>
+                <button class="menu-item" onclick="openMenuContent('menu2-5')">HTML код ФОРМИ</button>
+                <button class="menu-item" onclick="openMenuContent('menu2-6')">HTML код ЗОБРАЖЕННЯ</button>
+                <button class="menu-item" onclick="openMenuContent('menu2-7')">Висновки</button>
+            </div>
+            <div class="menu-content" id="menu-content">
+                <!-- Поле для вмісту елементів меню -->
+                <p id="menu2-1" class="menu-text active">Вміст для елемента 1</p>
+                <p id="menu2-2" class="menu-text">Вміст для елемента 2</p>
+                <p id="menu2-3" class="menu-text">Вміст для елемента 3</p>
+                <p id="menu2-4" class="menu-text">Вміст для елемента 4</p>
+                <p id="menu2-5" class="menu-text">Вміст для елемента 5</p>
+                <p id="menu2-6" class="menu-text">Вміст для елемента 6</p>
+                <p id="menu2-7" class="menu-text">Вміст для елемента 7</p>
+            </div>
         </div>
     </div>
+    <div id="tab3" class="tab-content">Вміст для вкладки 3</div>
+    <div id="tab4" class="tab-content">Вміст для вкладки 4</div>
+    <div id="tab5" class="tab-content">Вміст для вкладки 5</div>
+    <div id="tab6" class="tab-content">Вміст для вкладки 6</div>
+    <div id="tab7" class="tab-content">Вміст для вкладки 7</div>
+    <div id="tab8" class="tab-content">Вміст для вкладки 8</div>
 
 
     

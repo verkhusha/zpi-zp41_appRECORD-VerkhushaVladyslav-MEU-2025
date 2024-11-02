@@ -30,15 +30,20 @@ body {
     position: relative;
 }
 
+body {
+    background-color: #909090; /* Фон для всієї сторінки */
+}
+
 /* Стилі для кнопок вкладок */
 .tab-menu {
     display: flex;
     gap: 5px;
     margin-bottom: 20px;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .tab-button {
+    font-size: 18px;
     padding: 10px;
     border: none;
     background-color: #ddd;
@@ -57,11 +62,16 @@ body {
     display: none; /* Приховати всі вкладки за замовчуванням */
     padding: 20px;
     border: 1px solid #ccc;
-    
+
 }
 
 .tab-content.active {
     display: block; /* Показати активну вкладку */
+}
+
+/* Контейнер для вертикального меню і його вмісту */
+.menu-container {
+    display: flex;
 }
 
 /* Стилі для вертикального меню */
@@ -73,8 +83,9 @@ body {
 }
 
 .menu-item {
+    font-size: 16px;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 5px solid #ddd;
     background-color: #f4f4f4;
     cursor: pointer;
 }
@@ -90,6 +101,7 @@ body {
 
 /* Стилі для вмісту вертикального меню */
 .menu-content {
+    font-size: 20px;
     flex-grow: 1;
 }
 
