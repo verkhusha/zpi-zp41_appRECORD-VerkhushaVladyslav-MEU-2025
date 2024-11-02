@@ -5,7 +5,7 @@
     flex-direction: column; /* Розташовує елементи вертикально */
     height: 5vh; /* Висота сторінки */
     margin: 0;
-    font-size: 24px; /* Можна налаштувати розмір шрифту */
+    font-size: 24px; /* Розмір шрифту */
 }
 
 .subtext {
@@ -28,4 +28,38 @@
 }
 body {
     position: relative;
+}
+
+/* Стилі для кнопок вкладок */
+.tab-menu {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.tab-button:hover {
+    background-color: #bbb;
+}
+
+.tab-button.active {
+    background-color: #333;
+    color: white;
+}
+
+/* Стилі для вмісту вкладок */
+.tab-content {
+    display: none; /* Приховати всі вкладки за замовчуванням */
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.tab-content.active {
+    display: block; /* Показати активну вкладку */
 }
