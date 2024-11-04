@@ -22,12 +22,18 @@ function openTab(event, tabId) {
 
 // Функція для перемикання елементів вертикального меню
 function openMenuContent(menuId) {
-    const menuTexts = document.querySelectorAll('.menu-text');
+    // Знаходимо активну вкладку
+    const activeTab = document.querySelector('.tab-content.active');
+    
+    // Приховуємо всі елементи вмісту в активній вкладці
+    const menuTexts = activeTab.querySelectorAll('.menu-text');
     menuTexts.forEach(text => text.classList.remove('active'));
 
-    const menuItems = document.querySelectorAll('.menu-item');
+    // Прибираємо активний клас з усіх кнопок меню в активній вкладці
+    const menuItems = activeTab.querySelectorAll('.menu-item');
     menuItems.forEach(item => item.classList.remove('active'));
 
-    document.getElementById(menuId).classList.add('active');
-    document.querySelector(`[onclick="openMenuContent('${menuId}')"]`).classList.add('active');
+    // Активуємо вибраний вміст і кнопку меню
+    activeTab.querySelector(`#${menuId}`).classList.add('active');
+    activeTab.querySelector(`[onclick="openMenuContent('${menuId}')"]`).classList.add('active');
 }
