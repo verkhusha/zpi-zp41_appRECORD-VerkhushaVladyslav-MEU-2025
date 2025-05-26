@@ -1,114 +1,115 @@
 .centered-text {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column; /* Розташовує елементи вертикально */
-    height: 5vh; /* Висота сторінки */
-    margin: 0;
-    font-size: 24px; /* Розмір шрифту */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column; /* Розташовує елементи вертикально */
+  height: 5vh; /* Висота сторінки */
+  margin: 0;
+  font-size: 24px; /* Розмір шрифту */
 }
 
 .subtext {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 10px; /* Відступ між текстами */
-    font-size: 18px; /* Розмір шрифту підзаголовка */
-    color: #555; /* Колір тексту */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px; /* Відступ між текстами */
+  font-size: 18px; /* Розмір шрифту підзаголовка */
+  color: #555; /* Колір тексту */
 }
 
 .top-right-image {
-    position: absolute;
-    top: 0;         /* Вирівнювання по верхньому краю */
-    right: 0;       /* Вирівнювання по правому краю */
-    margin: 30px;   /* Відступ від країв сторінки */
-    width: 150px;   /* Ширина зображення, можна налаштувати */
-    height: auto;   /* Зберігає пропорції зображення */
+  position: absolute;
+  top: 0; /* Вирівнювання по верхньому краю */
+  right: 0; /* Вирівнювання по правому краю */
+  margin: 30px; /* Відступ від країв сторінки */
+  width: 150px; /* Ширина зображення, можна налаштувати */
+  height: auto; /* Зберігає пропорції зображення */
 }
 body {
-    position: relative;
+  position: relative;
 }
 
 body {
-    background-color: #bfbfbf; /* Фон для всієї сторінки */
+  background-color: #bfbfbf; /* Фон для всієї сторінки */
 }
 
 /* Стилі для кнопок вкладок */
 .tab-menu {
-    display: flex;
-    gap: 5px;
-    margin-bottom: 20px;
-    margin-top: 150px;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+  margin-top: 150px;
 }
 
 .tab-button {
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background-color: #ddd;
-    cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
 }
 
-
-
 .tab-button.active {
-    background-color: #020202;
-    color: rgb(254, 254, 254);
+  background-color: #020202;
+  color: rgb(254, 254, 254);
 }
 
 /* Стилі для вмісту вкладок */
 .tab-content {
-    display: none; /* Приховати всі вкладки за замовчуванням */
-    padding: 20px;
-    border: 1px solid #ccc;
-
+  display: none; /* Приховати всі вкладки за замовчуванням */
+  padding: 20px;
+  border: 1px solid #ccc;
 }
 
 .tab-content.active {
-    display: block; /* Показати активну вкладку */
+  display: block; /* Показати активну вкладку */
 }
 
 /* Контейнер для вертикального меню і його вмісту */
 .menu-container {
-    display: flex;
+  display: flex;
 }
 
 /* Стилі для вертикального меню */
 .vertical-menu {
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
 }
 
 .menu-item {
-    font-size: 16px;
-    padding: 10px;
-    border: 5px solid #ddd;
-    background-color: #f4f4f4;
-    cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  border: 5px solid #ddd;
+  background-color: #f4f4f4;
+  cursor: pointer;
 }
 
 .menu-item:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 .menu-item.active {
-    background-color: #333;
-    color: white;
+  background-color: #333;
+  color: white;
 }
 
 /* Стилі для вмісту вертикального меню */
 .menu-content {
-    font-size: 20px;
-    flex-grow: 1;
+  font-size: 20px;
+  flex-grow: 1;
 }
 
 .menu-text {
-    display: none;
+  display: none;
 }
 
 .menu-text.active {
-    display: block;
+  display: block;
+}
+
+img {
+  max-width: 1050px;
 }

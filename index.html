@@ -17,11 +17,12 @@
         <button class="tab-button active" onclick="openTab(event, 'tab1')">Лабораторна робота №1.1</button>
         <button class="tab-button" onclick="openTab(event, 'tab2')">Лабораторна робота №1.2</button>
         <button class="tab-button" onclick="openTab(event, 'tab3')">Лабораторна робота №2.1</button>
-        <button class="tab-button" onclick="openTab(event, 'tab4')">Лабораторна робота №2.2</button>
+        <button class="tab-button" onclick="openTab(event, 'tab4')">ЛАБОРАТОРНА РОБОТА №4</button>
         <button class="tab-button" onclick="openTab(event, 'tab5')">Лабораторна робота №3.1</button>
         <button class="tab-button" onclick="openTab(event, 'tab6')">Лабораторна робота №3.2</button>
-        <button class="tab-button" onclick="openTab(event, 'tab7')">Лабораторна робота №4.1</button>
-        <button class="tab-button" onclick="openTab(event, 'tab8')">Лабораторна робота №4.2</button>
+        <button class="tab-button" onclick="openTab(event, 'tab7')">Лабораторна робота №4</button>
+        <button class="tab-button" onclick="openTab(event, 'tab8')">Лабораторна робота №5</button>
+        <button class="tab-button" onclick="openTab(event, 'tab9')">Лабораторна робота №6</button>
     </div>
 
     <!-- Вміст вкладок -->
@@ -188,32 +189,628 @@
     <div id="tab2" class="tab-content">
         <div class="menu-container">
             <div class="vertical-menu">
-                <button class="menu-item active" onclick="openMenuContent('menu2-1')">Елемент 2-1</button>
-                <button class="menu-item" onclick="openMenuContent('menu2-2')">Елемент 2-2</button>
-                <button class="menu-item" onclick="openMenuContent('menu2-3')">Елемент 2-3</button>
-                <button class="menu-item" onclick="openMenuContent('menu2-4')">Елемент 2-4</button>
-                <button class="menu-item" onclick="openMenuContent('menu2-5')">Елемент 2-5</button>
-                <button class="menu-item" onclick="openMenuContent('menu2-6')">Елемент 2-6</button>
-                <button class="menu-item" onclick="openMenuContent('menu2-7')">Елемент 2-7</button>
+                <button class="menu-item active" onclick="openMenuContent('menu2-1')">Тема, мета, місце розташування</button>
+                <button class="menu-item" onclick="openMenuContent('menu2-2')">Способи підключення стилів</button>
+                <button class="menu-item" onclick="openMenuContent('menu2-3')">Селектори</button>
+                <button class="menu-item" onclick="openMenuContent('menu2-4')">Шрифт. Google Fonts</button>
+                <button class="menu-item" onclick="openMenuContent('menu2-5')">CSS: Таблиці. Фон. Списки</button>
             </div>
             <div class="menu-content" id="menu-content">
-                <!-- Поле для вмісту елементів меню -->
-                <p id="menu2-1" class="menu-text active">Вміст для елемента 2-1</p>
-                <p id="menu2-2" class="menu-text">Вміст для елемента 2-2</p>
-                <p id="menu2-3" class="menu-text">Вміст для елемента 2-3</p>
-                <p id="menu2-4" class="menu-text">Вміст для елемента 2-4</p>
-                <p id="menu2-5" class="menu-text">Вміст для елемента 2-5</p>
-                <p id="menu2-6" class="menu-text">Вміст для елемента 2-6</p>
-                <p id="menu2-7" class="menu-text">Вміст для елемента 2-7</p>
+                <div id="menu2-1" class="menu-text active">
+                    <p><strong>Тема:</strong> КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ 
+                        ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ</p>
+                    <p><strong>Мета проєкту:</strong> придбати практичні навички роботи з селекторами: тегів, класів, 
+                        ідентифікаторів; списками, різноманітними властивостями кольору і фону, 
+                        оформленням текстових елементів</p>
+                    <p>
+                        <a href="#" target="_blank">Посилання на Web сайт ресторану</a>
+                    </p>
+                    <p>
+                        <a href="#" target="_blank">Посилання на Web сайт звітнього HTML документу</a>
+                    </p>
+                </div>
+            
+                <div id="menu2-2" class="menu-text">
+                    <h3>Способи підключення стилів</h3>
+                    <p>У проєкті використано наступні способи підключення CSS:</p>
+                    <ul>
+                        <li>Вбудовані стилі (inline): для швидкої зміни окремих елементів.</li>
+                        <img src="./img/lab_1_2/inline_style.png" alt="">
+                        <li>Вбудовані в документ (style в &lt;head&gt;):.</li>
+                        <img src="./img/lab_1_2/head_style.png" alt="">
+                        <li>Зовнішній файл: <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></li>
+                        <img src="./img/lab_1_2/link_style.png" alt="">
+                    </ul>
+                </div>
+            
+                <div id="menu2-3" class="menu-text">
+                    <h3>Селектори</h3>
+                
+                    <h4>1. Селектор тегу</h4>
+                    <p>Селектор тегу дозволяє застосовувати стилі до всіх елементів певного типу. Наприклад, для всіх заголовків h1:</p>
+                    
+                    <img src="./img/lab_1_2/tag_selector.png" alt="Селектор тегу">
+                
+                    <h4>2. Селектор класу</h4>
+                    <p>Селектор класу використовується для стилізації елементів з певним класом. Наприклад:</p>
+                    
+                    <img src="./img/lab_1_2/class_selector.png" alt="Селектор класу">
+                
+                    <h4>3. Селектор ідентифікатора (ID)</h4>
+                    <p>Селектор ID застосовується до елемента з унікальним атрибутом <code>id</code>. Наприклад:</p>
+                    
+                    <img src="./img/lab_1_2/id_selector.png" alt="Селектор ID">
+                </div>
+                
+            
+                <div id="menu2-4" class="menu-text">
+                    <h3>Шрифт. Google Fonts</h3>
+                    <p>Для стилізації тексту використано шрифт з Google Fonts:</p>
+                    <img src="./img/lab_1_2/google_fonts.png" alt="google_fonts">
+                    <p>Після підключення шрифт використовувався через CSS:</p>
+                    <img src="./img/lab_1_2/use_font.png" alt="use_font">
+                </div>
+            
+                <div id="menu2-5" class="menu-text">
+                    <h3>CSS: Таблиці. Фон. Списки</h3>
+                    <p>На сторінці стилізовано таблиці, списки та фонові елементи:</p>
+                    <ul>
+                        <li>Таблиця з оформленням рядків та заголовків</li>
+                        <img src="./img/lab_1_2/table_1.png" alt="table_1">
+                        <img src="./img/lab_1_2/table_2.png" alt="table_2">
+
+                        <li>Оформлення списків</li>
+                        <img src="./img/lab_1_2/list_1.png" alt="list_1">
+                        <img src="./img/lab_1_2/list_2.png" alt="list_2">
+
+                        <li>Фонові зображення та градієнти</li>
+                        <img src="./img/lab_1_2/background_1.png" alt="background_1">
+                        <img src="./img/lab_1_2/background_2.png" alt="background_2">
+
+                    </ul>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <div id="tab3" class="tab-content">
+        <div class="menu-container">
+            <div class="vertical-menu">
+                <button class="menu-item active" onclick="openMenuContent('menu3-1')">Тема, мета, місце розташування</button>
+                <button class="menu-item" onclick="openMenuContent('menu3-2')">Завдання №1</button>
+                <button class="menu-item" onclick="openMenuContent('menu3-3')">Завдання №2</button>
+                <button class="menu-item" onclick="openMenuContent('menu3-4')">Завдання №3</button>
+            </div>
+            <div class="menu-content" id="menu-content">
+                <div id="menu3-1" class="menu-text active">
+                    <p><strong>Тема:</strong> ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА. ВЕРСТКА 
+                        ЗАСОБАМИ CSS та FLEXBOX.</p>
+                    <p><strong>Мета проєкту:</strong> </p>
+                    <ul>
+                        <li>придбати практичні навички роботи верстки сторінок засобами CSS, верстки на 
+                            основі плаваючих елементів, з’ясувати переваги та недоліки типів макетів веб-сторінок</li>
+                        <li>придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX</li>
+
+                    </ul>
+                    <p>
+                        <a href="#" target="_blank">Посилання на Web сайт ресторану</a>
+                    </p>
+                    <p>
+                        <a href="#" target="_blank">Посилання на Web сайт звітнього HTML документу</a>
+                    </p>
+                </div>
+            
+                <div id="menu3-2" class="menu-text">
+                    <h3>Завдання №1: Розробка макету сайту</h3>
+                    <p><strong>Тип макету:</strong> Фіксований (fixed layout). Всі блоки сайту мають задану ширину в пікселях.</p>
+                    <p><strong>Пояснення:</strong> Цей тип макету гарантує однаковий вигляд сайту на всіх екранах з достатньою шириною. Він простіший у реалізації, але менш гнучкий для мобільних пристроїв.</p>
+
+                    <h4>Скріншот головної сторінки:</h4>
+                    <img src="./img/lab_2_1/main_page1.png" alt="Головна сторінка">
+                    <img src="./img/lab_2_1/main_page2.png" alt="Головна сторінка">
+                    <img src="./img/lab_2_1/main_page3.png" alt="Головна сторінка">
+
+                    <h4>Фрагмент HTML-коду:</h4>
+                    <img src="./img/lab_2_1/code_main_page.png" alt="код">
+
+
+                    <h4>Особливості макету:</h4>
+                    <ul>
+                        <li>Застосовані стилі для меню, контенту та футеру</li>
+                        <li>Сторінка адаптована для ПК</li>
+                    </ul>
+                </div>
+
+            
+                <div id="menu3-3" class="menu-text">
+                    <h3>Завдання №2: Таблична та блокова верстка</h3>
+
+                    <h4>1. Фіксована таблична верстка</h4>
+                    <img src="./img/lab_2_1/fixed_table.png" alt="Фіксована таблична верстка">
+                    <img src="./img/lab_2_1/code_fixed_table.png" alt="код">
+
+
+                    <h4>2. Гумова таблична верстка</h4>
+                    <img src="./img/lab_2_1/fluid_table.png" alt="Гумова таблична верстка">
+
+
+                    <h4>3. Фіксована блокова верстка (плаваючі елементи)</h4>
+                    <img src="./img/lab_2_1/fixed_block.png" alt="Фіксована блокова верстка">
+                    <img src="./img/lab_2_1/code_fixed_block.png" alt="код">
+
+
+                    <h4>4. Гумова блокова верстка (плаваючі елементи)</h4>
+                    <img src="./img/lab_2_1/fluid_block.png" alt="Гумова блокова верстка">
+                    
+                    <h3>Висновки</h3>
+                    <ul>
+                        <li><strong>Таблична верстка:</strong> зручна для старих браузерів, має фіксовану структуру, але важко адаптується та не є семантично правильною.</li>
+                        <li><strong>Блокова верстка з float:</strong> більш гнучка, але складніша для центрування та вирівнювання.</li>
+                        <li><strong>FLEXBOX:</strong> найсучасніший підхід, легко дозволяє змінювати порядок елементів, адаптується до різних екранів, простий у вирівнюванні.</li>
+                    </ul>
+                </div>
+
+                
+            
+                <div id="menu3-4" class="menu-text">
+                    <h3>Завдання №3: FLEXBOX-верстка</h3>
+
+                    <h4>Скріншоти сторінки з FLEXBOX:</h4>
+                    <img src="./img/lab_2_1/flexbox_page1.png" alt="FLEXBOX сторінка">
+                    <img src="./img/lab_2_1/flexbox_page2.png" alt="FLEXBOX сторінка">
+                    <img src="./img/lab_2_1/flexbox_page3.png" alt="FLEXBOX сторінка">
+
+                    <h4>Фрагменти коду реалізації сторінки:</h4>
+                    <img src="./img/lab_2_1/html_flexbox_page.png" alt="html">
+                    <img src="./img/lab_2_1/css_flexbox_page.png" alt="css">
+                </div>
+
+
+            </div>
+            
+        </div>
+    </div>
+    <div id="tab4" class="tab-content">
+        <div class="menu-container">
+            <div class="vertical-menu">
+            <button class="menu-item active" onclick="openMenuContent('menu4-1')">Тема, мета, постановка задачі</button>
+            <button class="menu-item" onclick="openMenuContent('menu4-2')">Адаптивна верстка (планшет)</button>
+            <button class="menu-item" onclick="openMenuContent('menu4-3')">Адаптивна верстка (мобільні)</button>
+            <button class="menu-item" onclick="openMenuContent('menu4-4')">Пояснення логіки медіа-запитів</button>
+            </div>
+
+            <div class="menu-content" id="menu-content">
+            <div id="menu4-1" class="menu-text active">
+                <h3>Лабораторна робота №4</h3>
+                <p><strong>Тема:</strong> АДАПТИВНА ВЕРСТКА. МЕДІА-ЗАПИТИ. МЕТАТЕГ VIEWPORT.</p>
+                <p><strong>Мета:</strong> </p>
+                <ul>
+                    <li>Адаптивна верстка. Медіа-запити. Медіа-типи. Медіа-функції.Метатег
+                        viewport. Інструменти розробника. Стратегія Mobile First. 
+                    </li>
+                </ul>
+                <p>
+                    <a href="#" target="_blank">Посилання на Web сайт ресторану</a>
+                </p>
+                <p>
+                    <a href="#" target="_blank">Посилання на Web сайт звітного HTML документа</a>
+                </p>
+            </div>
+
+            <div id="menu4-2" class="menu-text">
+                <h3>Адаптивна верстка — Планшетна версія</h3>
+                <p>Десктоп версія сторінки, вже була показана в попередній роботі</p>
+                <p><strong>Брейкпоінт:</strong> 768px</p>
+
+                <h4>Скріншоти сторінки:</h4>
+                <img src="./img/lab_4_adap/tablet_1.png" alt="планшет 1">
+                <img src="./img/lab_4_adap/tablet_2.png" alt="планшет 2">
+
+                <h4>Фрагменти коду:</h4>
+                <img src="./img/lab_4_adap/css_tablet.png" alt="CSS планшет">
+            </div>
+
+            <div id="menu4-3" class="menu-text">
+                <h3>Адаптивна верстка — Мобільна версія</h3>
+                <p><strong>Брейкпоінт:</strong> max-width: 480px</p>
+
+                <h4>Скріншоти сторінки:</h4>
+                <img src="./img/lab_4_adap/mobile_1.png" alt="мобільна 1">
+                <img src="./img/lab_4_adap/mobile_2.png" alt="мобільна 2">
+
+                <h4>Фрагменти коду:</h4>
+                <img src="./img/lab_4_adap/css_mobile.png" alt="CSS мобільна">
+            </div>
+
+            <div id="menu4-4" class="menu-text">
+                <h3>Пояснення реалізації адаптивної верстки</h3>
+                <ul>
+                    <li><strong>Mobile First:</strong> основні стилі пишуться для мобільних пристроїв, а потім перевизначаються через медіа-запити для більших екранів</li>
+                    <li><strong>Медіа-запити:</strong> використовуються для підключення різних стилів залежно від ширини екрана</li>
+                    <li><strong>Логічні оператори:</strong> застосовані `and` та `not` у виразах медіа-запитів</li>
+                    <li><strong>viewport:</strong> метатег <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> встановлює ширину відображення</li>
+                </ul>
+            </div>
             </div>
         </div>
     </div>
-    <div id="tab3" class="tab-content">Вміст для вкладки 3</div>
-    <div id="tab4" class="tab-content">Вміст для вкладки 4</div>
-    <div id="tab5" class="tab-content">Вміст для вкладки 5</div>
-    <div id="tab6" class="tab-content">Вміст для вкладки 6</div>
-    <div id="tab7" class="tab-content">Вміст для вкладки 7</div>
-    <div id="tab8" class="tab-content">Вміст для вкладки 8</div>
+
+    <div id="tab5" class="tab-content">
+        <div class="menu-container">
+            <div class="vertical-menu">
+            <button class="menu-item active" onclick="openMenuContent('menu5-1')">Тема, мета, постановка задачі</button>
+            <button class="menu-item" onclick="openMenuContent('menu5-2')">Завдання №1</button>
+            <button class="menu-item" onclick="openMenuContent('menu5-3')">Завдання №2</button>
+            <button class="menu-item" onclick="openMenuContent('menu5-4')">Завдання №3</button>
+            <button class="menu-item" onclick="openMenuContent('menu5-5')">Завдання №4</button>
+            <button class="menu-item" onclick="openMenuContent('menu5-6')">Завдання №5</button>
+            <button class="menu-item" onclick="openMenuContent('menu5-7')">Висновки</button>
+            </div>
+
+            <div class="menu-content" id="menu-content">
+            <div id="menu5-1" class="menu-text active">
+                <h3>Лабораторна робота №3.1</h3>
+                <p><strong>Тема:</strong> ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ. 
+                    ВИКОРИСТАННЯ МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ 
+                    ЗАСОВАМИ МОВИ JAVASCRIPT
+                </p>
+                <p><strong>Мета:</strong> придбати практичні навички роботи з конструкціями мови JS, масивами 
+                    та фугкціями у js-сценаріях. Реалізація програм засовами мови 
+                    JAVASCRIPT
+                </p>
+                <p>
+                    <a href="#" target="_blank">Посилання на Web сайт ресторану</a>
+                </p>
+                <p>
+                    <a href="#" target="_blank">Посилання на Web сайт звітного HTML документа</a>
+                </p>
+            </div>
+
+            <div id="menu5-2" class="menu-text">
+                <h3>Завдання №1</h3>
+                <h4>Код:</h4>
+                <img src="./img/lab_3_1/task1_code.png" alt="код завдання 1">
+                <h4>Консоль:</h4>
+                <img src="./img/lab_3_1/task1_console.png" alt="результат завдання 1">
+            </div>
+
+            <div id="menu5-3" class="menu-text">
+                <h3>Завдання №2</h3>
+                <h4>Код:</h4>
+                <img src="./img/lab_3_1/task2_code.png" alt="код завдання 2">
+                <h4>Консоль:</h4>
+                <img src="./img/lab_3_1/task2_console.png" alt="результат завдання 2">
+            </div>
+
+            <div id="menu5-4" class="menu-text">
+                <h3>Завдання №3</h3>
+                <h4>Код:</h4>
+                <img src="./img/lab_3_1/task3_code.png" alt="код завдання 3">
+                <h4>Консоль:</h4>
+                <img src="./img/lab_3_1/task3_console.png" alt="результат завдання 3">
+            </div>
+
+            <div id="menu5-5" class="menu-text">
+                <h3>Завдання №4</h3>
+                <h4>Код:</h4>
+                <img src="./img/lab_3_1/task4_code.png" alt="код завдання 4">
+                <h4>Консоль:</h4>
+                <img src="./img/lab_3_1/task4_console.png" alt="результат завдання 4">
+            </div>
+
+            <div id="menu5-6" class="menu-text">
+                <h3>Завдання №5</h3>
+                <h4>Код:</h4>
+                <img src="./img/lab_3_1/task5_code.png" alt="код завдання 5">
+                <h4>Консоль:</h4>
+                <img src="./img/lab_3_1/task5_console.png" alt="результат завдання 5">
+            </div>
+
+            <div id="menu5-7" class="menu-text">
+                <h3>Висновки</h3>
+                <ul>
+                <li>Я навчився використовувати масиви у JavaScript, створювати та викликати функції.</li>
+                <li>Отримав практичні навички у виведенні результатів у консоль, налагодженні JS-коду.</li>
+                <li>Засвоїв базові методи роботи з масивами, умовними операторами та циклами.</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tab6" class="tab-content">
+        <div class="menu-container">
+            <div class="vertical-menu">
+                <button class="menu-item active" onclick="openMenuContent('menu6-1')">Тема, мета, постановка задачі</button>
+                <button class="menu-item" onclick="openMenuContent('menu6-2')">Завдання №2</button>
+                <button class="menu-item" onclick="openMenuContent('menu6-3')">Завдання №4</button>
+                <button class="menu-item" onclick="openMenuContent('menu6-4')">Завдання №6</button>
+                <button class="menu-item" onclick="openMenuContent('menu6-5')">Завдання №8</button>
+                <button class="menu-item" onclick="openMenuContent('menu6-6')">Завдання №9</button>
+                <button class="menu-item" onclick="openMenuContent('menu6-7')">Завдання №10</button>
+                <button class="menu-item" onclick="openMenuContent('menu6-8')">Висновки</button>
+            </div>
+
+            <div class="menu-content" id="menu-content">
+                <div id="menu6-1" class="menu-text active">
+                    <h3>Лабораторна робота №3.2</h3>
+                    <p><strong>Тема:</strong> ОБ'ЄКТ. МЕТОДИ ОБ'ЄКТА. МАСИВ ОБ'ЄКТІВ. ДЕСТРУКТУРИЗАЦІЯ ОБ'ЄКТІВ. CALLBACK. СТРІЛОЧНІ ФУНКЦІЇ. СТРІЛОЧНІ ФУНКЦІЇ ЯК КОЛБЕКИ.</p>
+                    <p><strong>Мета:</strong> придбати практичні навички роботи з об'єктами, методами об'єкта, callback-функціями, стрілочними функціями та їх використанням як колбеків. Реалізація програм засовами мови JavaScript.</p>
+                    <p>
+                        <a href="#" target="_blank">Посилання на Web сайт звітного HTML документа</a>
+                    </p>
+                </div>
+
+                <div id="menu6-2" class="menu-text">
+                    <h3>Завдання №2</h3>
+                    <h4>Код і результат консолі:</h4>
+                    <img src="./img/lab_3_2/task2.png" alt="Завдання 2: код і результат">
+                </div>
+
+                <div id="menu6-3" class="menu-text">
+                    <h3>Завдання №4</h3>
+                    <h4>Код і результат консолі:</h4>
+                    <img src="./img/lab_3_2/task4.png" alt="Завдання 4: код і результат">
+                </div>
+
+                <div id="menu6-4" class="menu-text">
+                    <h3>Завдання №6</h3>
+                    <h4>Код і результат консолі:</h4>
+                    <img src="./img/lab_3_2/task6.png" alt="Завдання 6: код і результат">
+                </div>
+
+                <div id="menu6-5" class="menu-text">
+                    <h3>Завдання №8</h3>
+                    <h4>Код і результат консолі:</h4>
+                    <img src="./img/lab_3_2/task8.png" alt="Завдання 8: код і результат">
+                </div>
+
+                 <div id="menu6-6" class="menu-text">
+                    <h3>Завдання №9</h3>
+                    <h4>Код і результат консолі:</h4>
+                    <img src="./img/lab_3_2/task9.png" alt="Завдання 9: код і результат">
+                </div>
+
+                <div id="menu6-7" class="menu-text">
+                    <h3>Завдання №10</h3>
+                    <h4>Код і результат консолі:</h4>
+                    <img src="./img/lab_3_2/task10.png" alt="Завдання 10: код і результат">
+                </div>
+
+                <div id="menu6-8" class="menu-text">
+                    <h3>Висновки</h3>
+                    <ul>
+                        <li>Я навчився створювати та використовувати об'єкти в JavaScript, а також методи об'єктів.</li>
+                        <li>Застосовував деструктуризацію для зручного доступу до властивостей об'єкта.</li>
+                        <li>Засвоїв використання callback-функцій та стрілочних функцій як колбеків.</li>
+                        <li>Опанував комбінування об'єктів із масивами для обробки складніших структур даних.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tab7" class="tab-content">
+        <div class="menu-container">
+            <div class="vertical-menu">
+            <button class="menu-item active" onclick="openMenuContent('menu7-1')">Тема, мета, постановка задачі</button>
+            <button class="menu-item" onclick="openMenuContent('menu7-2')">Завдання №2</button>
+            <button class="menu-item" onclick="openMenuContent('menu7-3')">Завдання №4</button>
+            <button class="menu-item" onclick="openMenuContent('menu7-4')">Завдання №6</button>
+            <button class="menu-item" onclick="openMenuContent('menu7-5')">Завдання №7</button>
+            <button class="menu-item" onclick="openMenuContent('menu7-6')">Завдання №8</button>
+            <button class="menu-item" onclick="openMenuContent('menu7-7')">Завдання №9</button>
+            <button class="menu-item" onclick="openMenuContent('menu7-8')">Завдання №10</button>
+            <button class="menu-item" onclick="openMenuContent('menu7-9')">Висновки</button>
+            </div>
+
+            <div class="menu-content" id="menu-content">
+            <div id="menu7-1" class="menu-text active">
+                <h3>ЛАБОРАТОРНА РОБОТА №4</h3>
+                <p><strong>Тема:</strong> КЛАСИ. ОБ'ЄКТНА МОДЕЛЬ ДОКУМЕНТА (DOM). ПОДІЇ. ОБ'ЄКТ ПОДІЇ. ДЕЛЕГУВАННЯ ПОДІЙ. THROTTLE. МОДУЛЬНІСТЬ КОДУ.</p>
+                <p><strong>Мета:</strong>  придбати практичні навички роботи з об'єктами. Методи об'єкта. Callback. Стрілочні функції. Стрілочні функції як колбеки. Реалізація програм засовами мови JAVASCRIPT</p>
+                <p>
+                <a href="#" target="_blank">Посилання на Web сайт ресторану</a><br>
+                <a href="#" target="_blank">Посилання на Web сайт звітного HTML документа</a>
+                </p>
+            </div>
+
+            <div id="menu7-2" class="menu-text">
+                <h3>Завдання №2</h3>
+                <h4>Код:</h4>
+                <img src="./img/lab_4/task2_code.png" alt="Код завдання 2">
+                <h4>Результат:</h4>
+                <img src="./img/lab_4/task2_result.png" alt="Результат завдання 2">
+            </div>
+
+            <div id="menu7-3" class="menu-text">
+                <h3>Завдання №4</h3>
+                <h4>Код:</h4>
+                <img src="./img/lab_4/task4_code.png" alt="Код завдання 4">
+                <h4>Результат:</h4>
+                <img src="./img/lab_4/task4_result.png" alt="Результат завдання 4">
+            </div>
+
+            <div id="menu7-4" class="menu-text">
+                <h3>Завдання №6</h3>
+                <h4>Код:</h4>
+                <img src="./img/lab_4/task6_code.png" alt="Код завдання 6">
+                <h4>Результат:</h4>
+                <img src="./img/lab_4/task6_result.png" alt="Результат завдання 6">
+            </div>
+
+            <div id="menu7-5" class="menu-text">
+                <h3>Завдання №7</h3>
+                <h4>Код:</h4>
+                <img src="./img/lab_4/task7_code.png" alt="Код завдання 7">
+                <h4>Результат:</h4>
+                <img src="./img/lab_4/task7_result.png" alt="Результат завдання 7">
+            </div>
+
+            <div id="menu7-6" class="menu-text">
+                <h3>Завдання №8</h3>
+                <h4>Код:</h4>
+                <img src="./img/lab_4/task8_code.png" alt="Код завдання 8">
+                <h4>Результат:</h4>
+                <img src="./img/lab_4/task8_result.png" alt="Результат завдання 8">
+            </div>
+
+            <div id="menu7-7" class="menu-text">
+                <h3>Завдання №9</h3>
+                <h4>Код:</h4>
+                <img src="./img/lab_4/task9_code.png" alt="Код завдання 9">
+                <h4>Результат:</h4>
+                <img src="./img/lab_4/task9_result.png" alt="Результат завдання 9">
+            </div>
+
+            <div id="menu7-8" class="menu-text">
+                <h3>Завдання №10</h3>
+                <h4>Код:</h4>
+                <img src="./img/lab_4/task10_code.png" alt="Код завдання 10">
+                <h4>Результат:</h4>
+                <img src="./img/lab_4/task10_result.png" alt="Результат завдання 10">
+            </div>
+
+            <div id="menu7-9" class="menu-text">
+                <h3>Висновки</h3>
+                <ul>
+                <li>Опанував створення класів і об'єктів в JavaScript.</li>
+                <li>Вивчив делегування подій та роботу з об'єктом події.</li>
+                <li>Ознайомився з throttle-функціями для оптимізації обробки подій.</li>
+                <li>Почав використовувати модульну структуру JS-коду для кращої організації.</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="tab8" class="tab-content">
+        <div class="menu-container">
+            <div class="vertical-menu">
+            <button class="menu-item active" onclick="openMenuContent('menu8-1')">Тема, мета, постановка задачі</button>
+            <button class="menu-item" onclick="openMenuContent('menu8-2')">Завдання №1</button>
+            <button class="menu-item" onclick="openMenuContent('menu8-3')">Завдання №2</button>
+            <button class="menu-item" onclick="openMenuContent('menu8-4')">Висновки</button>
+            </div>
+
+            <div class="menu-content" id="menu-content">
+            <div id="menu8-1" class="menu-text active">
+                <h3>ЛАБОРАТОРНА РОБОТА №5</h3>
+                <p><strong>Тема:</strong> WEB-СХОВИЩЕ. WEB STORAGE API. МОДУЛЬНОСТЬ КОДУ. СТВОРЕННЯ МОДАЛЬНОГО ВІКНА.</p>
+                <p><strong>Мета:</strong> Придбати практичні навички створення модального вікна; повторити процес створення макету галереї зображень; закріпити навички делегування подій.</p>
+                <p>
+                <a href="#" target="_blank">Посилання на Web сайт модального вікна</a><br>
+                <a href="#" target="_blank">Посилання на Web сайт звітного HTML документа</a>
+                </p>
+            </div>
+
+            <div id="menu8-2" class="menu-text">
+                <h3>Завдання №1</h3>
+                <h4>Код HTML:</h4>
+                <img src="./img/lab_5/task1_code1.png" alt="Код завдання 1 частина 1">
+                <h4>Код JS:</h4>
+                <img src="./img/lab_5/task1_code2.png" alt="Код завдання 1 частина 2">
+                <h4>Вигляд загальної сторінки:</h4>
+                <img src="./img/lab_5/task1_result1.png" alt="Результат завдання 1 скрін 1">
+                <h4>Попап фото з галереї:</h4>
+                <img src="./img/lab_5/task1_result2.png" alt="Результат завдання 1 скрін 2">
+            </div>
+
+            <div id="menu8-3" class="menu-text">
+                <h3>Завдання №2</h3>
+                <h4>Код HTML:</h4>
+                <img src="./img/lab_5/task2_code1.png" alt="Код завдання 2 частина 1">
+                <h4>Код JS:</h4>
+                <img src="./img/lab_5/task2_code2.png" alt="Код завдання 2 частина 2">
+                <h4>Валідація:</h4>
+                <img src="./img/lab_5/task2_result1.png" alt="Результат завдання 2 скрін 1">
+                <h4>Збереження даних:</h4>
+                <img src="./img/lab_5/task2_result2.png" alt="Результат завдання 2 скрін 2">
+            </div>
+
+            <div id="menu8-4" class="menu-text">
+                <h3>Висновки</h3>
+                <ul>
+                <li>Навчився використовувати Web Storage API для збереження даних у localStorage.</li>
+                <li>Реалізував модальне вікно та обробку подій із делегуванням.</li>
+                <li>Закріпив принцип модульності JavaScript-коду.</li>
+                <li>Створив інтерактивну галерею зображень з використанням модальних вікон.</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="tab9" class="tab-content">
+        <div class="menu-container">
+            <div class="vertical-menu">
+            <button class="menu-item active" onclick="openMenuContent('menu9-1')">Тема, мета, постановка задачі</button>
+            <button class="menu-item" onclick="openMenuContent('menu9-2')">Завдання №1</button>
+            <button class="menu-item" onclick="openMenuContent('menu9-3')">Завдання №2</button>
+            <button class="menu-item" onclick="openMenuContent('menu9-4')">Завдання №3</button>
+            <button class="menu-item" onclick="openMenuContent('menu9-5')">Висновки</button>
+            </div>
+
+            <div class="menu-content" id="menu-content">
+            <div id="menu9-1" class="menu-text active">
+                <h3>ЛАБОРАТОРНА РОБОТА №6</h3>
+                <p><strong>Тема:</strong> АСИНХРОННІСТЬ. ПРОМІСИ. HTTP-ЗАПИТИ. REST API. AJAX. КРОС-ДОМЕННІ ЗАПИТИ.</p>
+                <p><strong>Мета:</strong> придбати практичні навички роботи створення промісу. Методи then(), catch(),finally().Ланцюжки промісів. Методи класу Promise. Протокол HTTP. 
+                    Протокол HTTPS.. REST API Формат запиту. HTTP-методи. HTTP-заголовки. AJAX. Fetch API. Робота з публічним REST API
+                </p>
+                <p>
+                <a href="#" target="_blank">Посилання на Web сайт з виконаними завданнями</a><br>
+                <a href="#" target="_blank">Посилання на Web сайт звітного HTML документа</a>
+                </p>
+            </div>
+
+            <div id="menu9-2" class="menu-text">
+                <h3>Завдання №1</h3>
+                <h4>Код HTML:</h4>
+                <img src="./img/lab_6/task1_code1.png" alt="Код завдання 1 частина 1">
+                <h4>Фрагмент JS коду:</h4>
+                <img src="./img/lab_6/task1_code2.png" alt="Код завдання 1 частина 2">
+                <h4>Результат:</h4>
+                <img src="./img/lab_6/task1_result.png" alt="Результат завдання 1">
+            </div>
+
+            <div id="menu9-3" class="menu-text">
+                <h3>Завдання №2</h3>
+                <h4>Код HTML:</h4>
+                <img src="./img/lab_6/task2_code1.png" alt="Код завдання 2 частина 1">
+                <h4>Фрагмент JS коду:</h4>
+                <img src="./img/lab_6/task2_code2.png" alt="Код завдання 2 частина 2">
+                <h4>Результати:</h4>
+                <img src="./img/lab_6/task2_result.png" alt="Результат завдання 2">
+                <img src="./img/lab_6/task2_result2.png" alt="Результат завдання 2">
+            </div>
+
+            <div id="menu9-4" class="menu-text">
+                <h3>Завдання №3</h3>
+                <h4>Код HTML:</h4>
+                <img src="./img/lab_6/task3_code1.png" alt="Код завдання 3 частина 1">
+                <h4>Фрагменти JS коду:</h4>
+                <img src="./img/lab_6/task3_code2.png" alt="Код завдання 3 частина 2">
+                <img src="./img/lab_6/task3_code3.png" alt="Код завдання 3 частина 3">
+                <img src="./img/lab_6/task3_code4.png" alt="Код завдання 3 частина 4">
+                <h4>Результат:</h4>
+                <img src="./img/lab_6/task3_result.png" alt="Результат завдання 3">
+                <img src="./img/lab_6/task3_result2.png" alt="Результат завдання 3">
+            </div>
+
+            <div id="menu9-5" class="menu-text">
+                <h3>Висновки</h3>
+                <ul>
+                <li>Закріплено розуміння принципів асинхронності в JavaScript.</li>
+                <li>Отримано практичний досвід створення та обробки промісів з використанням then(), catch(), finally().</li>
+                <li>Розглянуто HTTP-запити, REST API та використання Fetch API.</li>
+                <li>Реалізовано роботу з публічним REST API, обробку JSON-даних та відображення результатів у HTML-документі.</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
 
 
     
